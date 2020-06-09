@@ -1,5 +1,8 @@
 #include "myHeader.h"
 
+struct node* head = NULL;
+struct node* temp = NULL;
+
 void createNode()
 {
 	int item;
