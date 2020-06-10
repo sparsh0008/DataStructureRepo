@@ -1,5 +1,8 @@
 #include "myHeader.h"
 
+struct node* ptemp = NULL;
+struct node* temp2 = NULL;
+
 void deleteNode(int pos)
 {
 	if (head->data != pos) // check for the possition is it the head or not
