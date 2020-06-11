@@ -1,6 +1,6 @@
 #include "myHeader.h"
 
-struct node* head = NULL;
+struct node* head = NULL; 
 struct node* temp = NULL;
 struct node* ptemp = NULL;
 
