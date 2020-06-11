@@ -12,10 +12,10 @@ struct node
 	struct node* link;
 };
 
-int num, numdel;
+int num, numdel, poss, data;
 void createNode(void);
 void deleteNode(int);
-void addNode(void);
+void addNode(int , int);
 void display(void);
 void searchNode(void);
 void reverseNode(void);

@@ -16,7 +16,11 @@ int main()
 				createNode();
 				break;
 			case 2:
-				addNode();
+				printf("Enter the possition where you want to add : ");
+				scanf("%d", &poss);
+				printf("Enter the data u want to insert : ");
+				scanf("%d", &data);
+				addNode(poss, data);
 				break;
 			case 3:
 				printf("Enter the possition you want to delete : ");
