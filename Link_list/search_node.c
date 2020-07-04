@@ -1,7 +1,19 @@
 #include "myHeader.h"
 
 
-void searchNode()
+void searchNode(int search)
 {
-	printf("I am a function to createNode");
+	temp = head;
+	while (temp->data != search)
+	{
+		temp = temp->link;
+	}
+	if (temp->data == search)
+	{
+		printf("Element found\n\n");
+	}
+	else if(temp->data != search)
+	{
+		printf("Element not found\n\n");
+	}
 }

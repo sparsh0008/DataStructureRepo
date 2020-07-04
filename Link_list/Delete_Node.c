@@ -1,6 +1,5 @@
 #include "myHeader.h"
 
-struct node* ptemp = NULL;
 struct node* temp2 = NULL;
 
 void deleteNode(int pos)

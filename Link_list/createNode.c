@@ -1,10 +1,10 @@
 #include "myHeader.h"
 
-struct node* head = NULL;
-struct node* temp = NULL;
-
 void createNode()
 {
+	head = NULL;
+	temp = NULL;
+
 	int item;
 	printf("Enter the data to be added : ");
 	scanf("%d", &item);

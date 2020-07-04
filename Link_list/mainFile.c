@@ -6,7 +6,7 @@ int main()
 
 	do
 	{
-		printf("1. Create a node\n2. Add a node\n3. Delete a node\n4. Search a node\n5. reverse a node\n6. Display and Exit");
+		printf("\n1. Create a node\n2. Add a node\n3. Delete a node\n4. Search a node\n5. reverse a node\n6. Display and Exit\n\n");
 		printf("Enter the choice: ");
 		scanf("%d", &choice);
 
@@ -28,7 +28,9 @@ int main()
 				deleteNode(numdel);
 				break;
 			case 4:
-				searchNode();
+				printf("Enter the number you want to Search : ");
+				scanf("%d", &search);
+				searchNode(search);
 				break;
 			case 5:
 				reverseNode();

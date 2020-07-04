@@ -2,7 +2,6 @@
 
 void display()
 {
-	printf("I am a function to createNode");
 	struct node* current = head;
 
 	if (head == NULL)
@@ -12,7 +11,6 @@ void display()
 	}
 
 	printf("Nodes are: \n");
-
 	while (current != NULL)
 	{
 		printf("%d\n", current->data);

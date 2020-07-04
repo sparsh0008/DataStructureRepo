@@ -5,6 +5,8 @@ extern struct node* head;
 extern struct node* temp;
 extern struct node* ptemp;
 extern struct node* temp2;
+extern struct node* pre;
+extern struct node* post;
 
 struct node
 {
@@ -12,10 +14,10 @@ struct node
 	struct node* link;
 };
 
-int num, numdel, poss, data;
+int num, numdel, poss, data, search;
 void createNode(void);
 void deleteNode(int);
 void addNode(int , int);
 void display(void);
-void searchNode(void);
+void searchNode(int);
 void reverseNode(void);
