@@ -14,12 +14,12 @@ void create(struct stack* st)
 	st->TOP = -1;
 	st->S = (int*)malloc(st->size * sizeof(int));
 }
-void Display(struct stack st)
+void Display(struct stack* st)
 {
 	int i;
-	for (i = TOP ; i >= 0; i--)
+	for (i = st->TOP; i >= 0; i--)
 	{
-		printf("%d", st.S[i]);
+		printf("%d", st->S[i]);
 		printf("\n");
 	}
 }
@@ -44,6 +44,6 @@ int main()
 	push(&st, 20);
 	push(&st, 30);
 
-	Display(st);
+	Display();
 	return 0;
 }
